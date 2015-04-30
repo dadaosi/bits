@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD iBatis Mapper 3.0 //EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ccut.bits.security.dao.ClassDao">
+
+       <select id="getClassListPage" resultType="Classd">
+              SELECT class_description FROM info_class
+              ${sortField} ${sortOrder}
+       </select>
+
+</mapper>
